@@ -1,0 +1,17 @@
+---
+about:
+  template: jolla
+  image-shape: rectangle
+  image-width: 20em
+  id: about-block
+  image: "img/my_image.jpg"
+  
+      
+mainfont: Asap
+sansfont: Asap
+---
+
+::: {#about-block}
+:::
+
+# Welcome to CKCARE Team Meeting

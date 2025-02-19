@@ -1,0 +1,79 @@
+# This file controls the settings for your Quarto template from www.marvinschmitt.com
+
+# website settings
+website:
+  title: "CK-CARE Team Meeting"                                # Your name
+  description: "This is the Website specifically dedicated for CK-CARE Team Meeting"   # A brief slogan (optional)
+  image: img/my_image.jpg
+  
+  favicon: img/favicon.png
+  
+  page-footer:
+    right: "Augsburg, Feb 23th, 2025"
+    left: "CK-CARE"
+   
+    
+  
+  
+  # start of the navigation bar at the top of the website
+  navbar:
+    pinned: true
+    logo: /img/logo.png
+    
+    # your sub-pages
+    left:
+      - text: "PRORAD"
+        href: PRORAD/index.qmd
+      - text: "CARE"
+        href: CARE/index.qmd
+     
+    
+    # your social media handles
+   
+  
+  
+
+# Don't touch unless you know what you are doing :) ------------
+  search: 
+    location: navbar
+    type: textbox
+ 
+project:
+  type: website
+  output-dir: docs
+
+  preview: 
+    port: 22222
+    browser: true
+    watch-inputs: true
+    navigate: true
+
+execute:
+  freeze: true
+
+
+    
+    
+    
+format:
+  html:
+    fontsize: 1.1em
+    header-includes: |
+      <link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Roboto" type="text/css"/>
+    theme: 
+      - darkly
+      - barbie.scss
+    css: html/myCSS2.css
+    toc: false
+    code-link: true
+    anchor-sections: true
+    fig-cap-location: margin
+    reference-location: margin
+    footnotes-hover: true
+editor: visual
+mainfont: Roboto
+sansfont: Roboto    
+    
+    
+ 
+    
